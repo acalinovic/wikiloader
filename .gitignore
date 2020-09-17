@@ -1,8 +1,9 @@
 .idea/
-*.pyc
-htmls/.*
-files/.*
+.pytest_cache/
+htmls/
+files/
 .DS_Store
+*.pyc
 *.png
 *.svg
 *.html

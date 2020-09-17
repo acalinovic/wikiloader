@@ -39,6 +39,8 @@ class FileLoader(BaseLoader):
                     self._persist()
                     break
             except requests.exceptions.ReadTimeout:
-                print(f"Timeout on {self._current_source}, retries left: {retries}")
+                print(f"ReadTimeout on {self._current_source}, retries left: {retries}")
+            except requests.exceptions.ConnectTimeout:
+                print(f"ConnectTimeout on {self._current_source}, retries left: {retries}")
             retries -= 1
         return self.get_current_file()

@@ -1,5 +1,6 @@
-import pandas as pd
 from uuid import uuid4, UUID
+
+import pandas as pd
 
 _registry = pd.DataFrame(
     columns=[

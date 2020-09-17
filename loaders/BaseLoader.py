@@ -1,11 +1,10 @@
 import os
 import re
-from io import StringIO, BytesIO
 from pathlib import Path
-from PIL import Image
 
 
 class BaseLoader:
+
     _PREFIX = None
     _PERSIST_DIR = None
     _current_source = None

@@ -1,5 +1,5 @@
-import os
 import getpass
+import os
 from loaders import PageLoader, FileLoader
 
 os.environ["WIKILOADER_WIKI_PREFIX"] = "https://fr.wikipedia.org/wiki"
@@ -10,11 +10,7 @@ os.environ["WIKILOADER_HTMLS_DIR"] = os.path.join(os.environ.get("WIKILOADER_ROO
 
 
 def main(*args, **kwargs):
-    loader = PageLoader()
-    test_soup = loader.load_from_suffix("Belgique", timeout=1, retry=5)
-    file_loader = FileLoader()
-    file = file_loader.load_from_link("https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg")
-    file2 = file_loader.load_from_link("https://upload.wikimedia.org/wikipedia/commons/8/8c/Be-map-fr.png")
+    pass
 
 
 if __name__ == '__main__':

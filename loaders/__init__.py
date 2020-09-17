@@ -1,3 +1,3 @@
-from . BaseLoader import BaseLoader
-from . PageLoader import PageLoader
-from . FileLoader import FileLoader
+from .BaseLoader import BaseLoader
+from .FileLoader import FileLoader
+from .PageLoader import PageLoader
