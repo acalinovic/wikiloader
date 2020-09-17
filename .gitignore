@@ -1,0 +1,8 @@
+.idea/
+*.pyc
+htmls/.*
+files/.*
+.DS_Store
+*.png
+*.svg
+*.html
