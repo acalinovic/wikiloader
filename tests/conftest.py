@@ -4,7 +4,7 @@ from loaders import PageLoader, FileLoader
 
 @fixture
 def wiki_page_suffix():
-    return "Belgique"
+    return "Belgium"
 
 
 @fixture
@@ -25,3 +25,15 @@ def page_loader():
 @fixture
 def file_loader():
     return FileLoader()
+
+
+@fixture
+def foreign_page_loader():
+    loader = PageLoader()
+    print(loader._LANG)
+    print(loader._PREFIX)
+    loader.set_search_lang("en")
+    print(loader._LANG)
+    print(loader._PREFIX)
+    return loader
+

@@ -36,7 +36,7 @@ class PageLoader(BaseLoader):
         while retries >= 0:
             try:
                 self._response = requests.get(self._current_source, **options)
-                if self._response.status_code > 200:
+                if not self._response.ok:
                     print(f"request on {self._current_source} failed with {self._response.status_code} status code")
                     break
                 else:
